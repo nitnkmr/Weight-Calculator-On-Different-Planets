@@ -36,8 +36,8 @@ let city="";
             console.log(planets[Number(city)].add);
             let ans=planets[Number(city)].value1+Number(text.value)
             document.getElementsByClassName("card")[0].innerHTML=`<div class="innercard"><img src="${planets[Number(city)].add}" alt="" height="250px" width="250px">
-            <p>Your Weight On planet : ${planets[Number(city)].name}</p>
-            <h3> ${ans} kg</h3></div>`
+            <div><p>Your Weight On planet : ${planets[Number(city)].name}</p>
+            <h3> ${ans} kg</h3></div></div>`
         }
         else{
             document.getElementsByClassName("card")[0].innerHTML=`<div class="innercard">Enter Ur weight First</div>`
